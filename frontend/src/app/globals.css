@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--bg: 255 255 255;
+	--fg: 17 24 39;
+	--accent: 249 115 22;
+}
+
+.dark {
+	--bg: 17 24 39;
+	--fg: 243 244 246;
+	--accent: 239 68 68;
+}
+
+body {
+	@apply bg-[rgb(var(--bg))] text-[rgb(var(--fg))];
+}
+
+.btn {
+	@apply inline-flex items-center justify-center rounded-md px-4 py-2 font-medium transition-colors;
+}
+.btn-accent {
+	@apply bg-[rgb(var(--accent))] text-white hover:opacity-90;
+}
+.card {
+	@apply rounded-lg overflow-hidden bg-black/5 dark:bg-white/5;
+}
