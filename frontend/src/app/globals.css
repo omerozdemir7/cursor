@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255 255 255;
+  --foreground: 17 24 39;
+  --accent: 234 88 12; /* orange-600 */
+}
+
+.dark {
+  --background: 17 24 39;
+  --foreground: 243 244 246;
+  --accent: 220 38 38; /* red-600 */
+}
+
+body {
+  @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))];
+}
+
+.accent-bg {
+  background-color: rgb(var(--accent));
+}
+
+.accent-text {
+  color: rgb(var(--accent));
+}
